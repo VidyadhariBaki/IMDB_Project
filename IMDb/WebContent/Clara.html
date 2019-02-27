@@ -26,7 +26,7 @@
 
 .jumbotron {
 	margin-bottom: 0;
-	background-color: white;
+	background-color: violet;
 	backgroung-image: center;
 }
 
@@ -66,19 +66,47 @@ footer {
 			</div>
 			<div class="col-sm-6"></div>
 
-			<br> <br> <br>
-
+			<br> 
+<h6>Isaac takes on an unqualified but spirited young research assistant named Clara. Working as a team, their research ultimately leads to a shocking scientific discovery.
+<h6>Initial release: 10 September 2018</h6>
+<h6>Director: Akash Sherman</h6>
+<h6>Music director: Jonathon Kawchuk</h6>
 			<h2>Rating</h2>
 			<span class="fa fa-star checked"></span> <span
 				class="fa fa-star checked"></span> <span class="fa fa-star checked"></span>
 			<span class="fa fa-star"></span> <span class="fa fa-star"></span>
 			<h2>Comments</h2>
-			<textarea rows="4" cols="50">
-    Comments 
-</textarea>
+			<label for="comment" class="required"><h3>Write  Comment Here</h3></label>
+ 
+  <input type="button"  value="Click Here For Comment" data-toggle="modal" data-target="#myModal"></input> 
+  
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+           <div class="form-group">
+  <p>Please Login First</p>
+<form action="ValidationPath" method="post">
+    <label for="email" class="required">Email address:</label>
+    <input type="email" class="form-control"  placeholder="Enter your mail here" name="email"  class="required">
+    
+   <label for="pwd" class="required">Password:</label>
+    <input type="password" class="form-control"  placeholder="Enter your password here"  name="password"  class="required">
+    <input type ="submit" value="submit">
+    </form>
+    <div class="modal-content">
+        <div class="modal-header">
+           <div class="form-group">
+ 
+    </form>
+        </div>
+      </div>
+        </div>
+      </div>
 		</div>
 	</div>
-
 </body>
 </html>
 
