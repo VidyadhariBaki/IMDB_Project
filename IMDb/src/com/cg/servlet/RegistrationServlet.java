@@ -23,16 +23,12 @@ public class RegistrationServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
 		boolean val=false;
 		String firstName=request.getParameter("firstname");
 		String lastName=request.getParameter("lastname");
@@ -40,17 +36,21 @@ public class RegistrationServlet extends HttpServlet {
 		String mobileNo=request.getParameter("num");
 		String userName=request.getParameter("username");
 	    String pwd=request.getParameter("password");
-		RegistrationDAO registration=new RegistrationDAO();
+		RegistrationDAO reg=new RegistrationDAO();
+		System.out.println(reg);
 		try {
-			val=registration.Registration(firstName, lastName, email, mobileNo, userName, pwd);
+			val=reg.registration(firstName, lastName, email, mobileNo, userName, pwd);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
-		if(val=true)
+		if(val==true)
 		{
 		response.sendRedirect("index.html");
-		
-	}
+		}
+		else
+		{
+			response.sendRedirect("Registration.html");
+		}
 
 	}}

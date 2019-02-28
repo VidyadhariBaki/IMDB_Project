@@ -8,11 +8,12 @@ import com.cg.connection.ConnectionFactory;
 import com.cg.pojo.RegistrationDetails;
 
 public class RegistrationDAO {
-	public boolean Registration(String firstName,String lastName,String emailid,String mobileNo,String userName,String password)throws SQLException {
+	
+	public boolean registration(String firstName,String lastName,String emailid,String mobileNo,String userName,String password)throws SQLException {
 		Connection conn = ConnectionFactory.getConnection();
-		String res = "insert into Registration values(?,?,?,?,?,?)";
-		
-		PreparedStatement pStatement = conn.prepareStatement(res);
+		String result= "insert into Registration values(?,?,?,?,?,?)";
+		System.out.println(conn);
+		PreparedStatement pStatement = conn.prepareStatement(result);
 		pStatement.setString(1, firstName);
 		pStatement.setString(2, lastName);
 		pStatement.setString(3, emailid);

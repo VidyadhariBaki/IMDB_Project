@@ -19,12 +19,12 @@ public class ConnectionFactory {
 
 		return conn;
 	}
-	public static void main(String[] args)
-	
-{
-		System.out.println(ConnectionFactory.getConnection());
-		
-		
-	}
+//	public static void main(String[] args)
+//	
+//{
+//		System.out.println(ConnectionFactory.getConnection());
+//		
+//		
+//	}
 
 }

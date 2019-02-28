@@ -46,7 +46,7 @@ footer {
 	<div class="jumbotron">
 		<div class="container text-center">
 			<center>
-				<img src="C:\Users\vibaki\Images\rsz_shaun-the-sheep-hd-cover-1024x576.jpg" class="img-responsive"
+				<img src="C:\Users\vibaki\git\IMDB_Project\IMDb\WebContent\Images\rsz_shaun-the-sheep-hd-cover-1024x576.jpg" class="img-responsive"
 					style="width: 40%" "height:250px" alt="Img">
 			</center>
 		</div>
@@ -72,13 +72,17 @@ footer {
 <h6> Directors: Richard Starzak, Mark Burton</h6>
 <h6> Featured song: Feels Like Summer</h6>
 <h6> Box office: 10.62 crores USD</h6>
+			<br>
+            
 			<h2>Rating</h2>
 			<span class="fa fa-star checked"></span> <span
 				class="fa fa-star checked"></span> <span class="fa fa-star checked"></span>
 			<span class="fa fa-star"></span> <span class="fa fa-star"></span>
-			<h2>Comments</h2>
-			<label for="comment" class="required"><h3>Write  Comment Here</h3></label>
+			<br>
+
  
+ <br>
+ <br>
   <input type="button"  value="Click Here For Comment" data-toggle="modal" data-target="#myModal"></input> 
   
  <div class="modal fade" id="myModal" role="dialog">
@@ -88,15 +92,31 @@ footer {
       <div class="modal-content">
         <div class="modal-header">
            <div class="form-group">
-  <p>Please Login First</p>
-<form action="ValidationPath" method="post">
-    <label for="email" class="required">Email address:</label>
-    <input type="email" class="form-control"  placeholder="Enter your mail here" name="email"  class="required">
-    
-   <label for="pwd" class="required">Password:</label>
-    <input type="password" class="form-control"  placeholder="Enter your password here"  name="password"  class="required">
-    <input type ="submit" value="submit">
-    </form>
+  <p>Login </p>
+<form action="LoginServlet" method="post">
+  
+                                    <div class="form-group">
+                                        <label for="name" class="cols-sm-2 control-label">Username</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" name="uname"  placeholder="Enter your Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+   <div class="form-group">
+                                        <label for="password" class="cols-sm-2 control-label">Password</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                <input type="password" class="form-control" name="pwd"  placeholder="Enter your Password" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="form-group ">
+                                        <button type="Submit" class="btn btn-primary btn-lg btn-block login-button">Login</button>
+                                    </div>
+                                     </form>
     <div class="modal-content">
         <div class="modal-header">
            <div class="form-group">
