@@ -1,0 +1,27 @@
+
+<style>
+  .img
+  {
+    background-color:aqua;
+  }
+</style>
+  <ul class="list-group">
+{{title}}
+    <div class="img">
+                <img src="https://s3-eu-west-1.amazonaws.com/lecturequizuploads/f0cb8760-5992-4566-bec6-34f2698b3fa4?height=500"
+               class="img-responsive center-block"
+               style="max-height:400px;padding-bottom:50px;" />
+              </div>   
+   
+    <li class="list-group-item "><a [routerLink]="['/create']">
+     
+     <h3> Add Movie</h3>
+    </a></li>
+    <li class="list-group-item"><a [routerLink]="['/index']" >
+     <h3> Search Movie By Category</h3>
+    </a></li>
+    
+  </ul>
+  <div class="container">
+  <router-outlet></router-outlet>
+</div>
