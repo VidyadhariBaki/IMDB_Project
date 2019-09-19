@@ -1,0 +1,14 @@
+spring:
+  profiles: default
+  application:
+    name: loc-data-service
+  data:
+    mongodb:
+      database: onepdl
+      port: 27017
+      host: localhost
+logging:
+  level:
+    root: INFO
+server:
+  port: 8005
