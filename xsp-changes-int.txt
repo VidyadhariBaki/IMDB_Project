@@ -1,0 +1,444 @@
+https://websec-int.cable.comcast.com/as/token.oauth2?client_id=test_invops&client_secret=96ddf480a57e48718e7d1d34ce434227&grant_type=client_credentials&scope=scs:iip-service
+
+get-inventory
+
+http://get-inventory-xsp-upgrade.g4.app.cloud.comcast.net/api/inventory/V1.0/get-inventory/MT1406TNH346/device/details?NT_ID=vbaki936
+get
+
+{
+    "dataCached": "true",
+    "device": {
+        "keyId": "MT1406TNH346",
+        "host": {
+            "serialNumber": "MT1406TNH346",
+            "vendorMake": "Motorola",
+            "vendorModel": "MOTRNG150CNMR",
+            "provisioningMake": "Motorola",
+            "provisioningModel": "MOTRNG150CNMR",
+            "canonicalMake": "MOTO",
+            "canonicalModel": "MR150CNM",
+            "type": "Legacy",
+            "lifeCycleStatus": "Used",
+            "siteId": "CJOHNS021",
+            "acquisitionType": "Comcast",
+            "inventoryStatus": "Available",
+            "deviceTypeIdentifier": "",
+            "boxIdentifier": "",
+            "deviceCapability": "",
+            "legacyComponentType": "",
+            "deviceCapabilityCode": "",
+            "deviceCapabilityFromGetCiba": "",
+            "videoOnly": "",
+            "xCompatible": "",
+            "usgDorType": "",
+            "primary": "",
+            "x1": "",
+            "hasTru2Way": "",
+            "inventoryClassification": "MOT HD",
+            "billingLocation": "2099",
+            "billingEntity": "",
+            "billingMake": "MHOST",
+            "billingModel": "MR150CNMR",
+            "billingSerial": "MT1406TNH346",
+            "billingStatus": "T",
+            "address1Caption": "M-Card Unit Address",
+            "address2Caption": "STB Serial Number",
+            "attributes": {
+                "hostmac": "",
+                "cmmac": "",
+                "mtamac": "",
+                "wifimac": "",
+                "stbmac": "58:56:E8:CC:D9:E3",
+                "lanmac": "",
+                "wanmac": "",
+                "ethernetmac": "",
+                "unitAddress": "00:00:08:93:32:97:10:25",
+                "esn_meid": "",
+                "csgequipTypeCode": "MW",
+                "tnportCount": "",
+                "wifiInd": "",
+                "docsisVersion": "",
+                "devicemac": ""
+            }
+        }
+    }
+}
+
+post
+
+http://get-inventory-xsp-upgrade.g4.app.cloud.comcast.net/api/inventory/V1.0/get-inventory/deviceList/details
+
+Response
+
+{
+    "deviceList": [
+        {
+            "dataCached": "true",
+            "device": {
+                "keyId": "97F2H17FBD37694",
+                "host": {
+                    "serialNumber": "97F2H17FBD37694",
+                    "vendorMake": "Arris",
+                    "vendorModel": "TG3482G",
+                    "provisioningMake": "ARRIS Group, Inc.",
+                    "provisioningModel": "TG3482G",
+                    "canonicalMake": "AR",
+                    "canonicalModel": "TG3482G",
+                    "type": "Gateway",
+                    "lifeCycleStatus": "New",
+                    "siteId": "SMILLE255",
+                    "acquisitionType": "Comcast",
+                    "inventoryStatus": "Available",
+                    "deviceTypeIdentifier": "MTA",
+                    "boxIdentifier": "",
+                    "deviceCapability": "IMS_HD_VOICE,DOCSIS 3.1",
+                    "legacyComponentType": "EMTA",
+                    "deviceCapabilityCode": "HD VOICE-I,D3.1",
+                    "deviceCapabilityFromGetCiba": "XB6",
+                    "videoOnly": "",
+                    "xCompatible": "false",
+                    "usgDorType": "XB6",
+                    "primary": "N",
+                    "x1": "false",
+                    "hasTru2Way": "false",
+                    "inventoryClassification": "XB6",
+                    "billingLocation": "2984",
+                    "billingEntity": "",
+                    "billingMake": "AR",
+                    "billingModel": "TG3482G",
+                    "billingSerial": "88EF16DD28F5",
+                    "billingStatus": "T",
+                    "address1": "88EF16DD28F5",
+                    "address2": "88EF16DD28F6",
+                    "address3": "",
+                    "address4": "",
+                    "address5": "",
+                    "address1Caption": "CM MAC Address",
+                    "address2Caption": "MTA MAC Address",
+                    "attributes": {
+                        "hostmac": "",
+                        "cmmac": "88:EF:16:DD:28:F5",
+                        "mtamac": "88:EF:16:DD:28:F6",
+                        "wifimac": "",
+                        "stbmac": "",
+                        "lanmac": "",
+                        "wanmac": "",
+                        "ethernetmac": "",
+                        "unitAddress": "",
+                        "esn_meid": "",
+                        "csgequipTypeCode": "3V",
+                        "tnportCount": "0",
+                        "wifiInd": "No",
+                        "docsisVersion": "DOCSIS3.0",
+                        "devicemac": ""
+                    }
+                }
+            }
+        },
+        {
+            "dataCached": "true",
+            "device": {
+                "keyId": "MT1406TNH346",
+                "host": {
+                    "serialNumber": "MT1406TNH346",
+                    "vendorMake": "Motorola",
+                    "vendorModel": "MOTRNG150CNMR",
+                    "provisioningMake": "Motorola",
+                    "provisioningModel": "MOTRNG150CNMR",
+                    "canonicalMake": "MOTO",
+                    "canonicalModel": "MR150CNM",
+                    "type": "Legacy",
+                    "lifeCycleStatus": "Used",
+                    "siteId": "CJOHNS021",
+                    "acquisitionType": "Comcast",
+                    "inventoryStatus": "Available",
+                    "deviceTypeIdentifier": "",
+                    "boxIdentifier": "",
+                    "deviceCapability": "",
+                    "legacyComponentType": "",
+                    "deviceCapabilityCode": "",
+                    "deviceCapabilityFromGetCiba": "",
+                    "videoOnly": "",
+                    "xCompatible": "",
+                    "usgDorType": "",
+                    "primary": "",
+                    "x1": "",
+                    "hasTru2Way": "",
+                    "inventoryClassification": "MOT HD",
+                    "billingLocation": "2099",
+                    "billingEntity": "",
+                    "billingMake": "MHOST",
+                    "billingModel": "MR150CNMR",
+                    "billingSerial": "MT1406TNH346",
+                    "billingStatus": "T",
+                    "address1": "0000089332971025",
+                    "address2": "M11408TDP152",
+                    "address3": "5856E8CCD9E3",
+                    "address4": "6455B199902A",
+                    "address5": "MT1406TNH346",
+                    "address1Caption": "M-Card Unit Address",
+                    "address2Caption": "STB Serial Number",
+                    "attributes": {
+                        "hostmac": "",
+                        "cmmac": "",
+                        "mtamac": "",
+                        "wifimac": "",
+                        "stbmac": "58:56:E8:CC:D9:E3",
+                        "lanmac": "",
+                        "wanmac": "",
+                        "ethernetmac": "",
+                        "unitAddress": "00:00:08:93:32:97:10:25",
+                        "esn_meid": "",
+                        "csgequipTypeCode": "MW",
+                        "tnportCount": "",
+                        "wifiInd": "",
+                        "docsisVersion": "",
+                        "devicemac": ""
+                    }
+                }
+            }
+        }
+    ]
+}
+
+iip-service
+
+http://iip-service-xsp-int.g4.app.cloud.comcast.net/api/inventory/V1.1/item/97F2H17FBD37694/details
+
+
+response
+
+{
+    "dataCached": "true",
+    "keyId": "97F2H17FBD37694",
+    "inventoryItem": {
+        "classification": [
+            {
+                "name": "Vendor",
+                "type": "String",
+                "value": "Arris"
+            },
+            {
+                "name": "Model",
+                "type": "String",
+                "value": "TG3482G"
+            },
+            {
+                "name": "Canonical Make",
+                "type": "String",
+                "value": "AR"
+            },
+            {
+                "name": "Canonical Model",
+                "type": "String",
+                "value": "TG3482G"
+            }
+        ],
+        "category": [
+            {
+                "name": "Inventory Type",
+                "type": "String",
+                "value": "Gateway"
+            },
+            {
+                "name": "Inventory Classification",
+                "type": "String",
+                "value": "XB6"
+            },
+            {
+                "name": "Inventory Type Identifier",
+                "type": "String",
+                "value": "MTA"
+            }
+        ],
+        "capability": [
+            {
+                "name": "DOCSIS Version",
+                "type": "Decimal",
+                "value": "DOCSIS3.0"
+            },
+            {
+                "name": "TN Port Count",
+                "type": "Integer",
+                "value": "0"
+            },
+            {
+                "name": "Wifi",
+                "type": "Boolean",
+                "value": "No"
+            },
+            {
+                "name": "Inventory Capability Details",
+                "type": "String",
+                "value": "IMS_HD_VOICE,DOCSIS 3.1"
+            },
+            {
+                "name": "Inventory Capability Code",
+                "type": "String",
+                "value": "XB6"
+            },
+            {
+                "name": "IsXComaptible",
+                "type": "Boolean",
+                "value": "false"
+            }
+        ],
+        "component": [
+            {
+                "name": "Serial Number",
+                "type": "String",
+                "value": "97F2H17FBD37694"
+            },
+            {
+                "name": "cmmac",
+                "type": "String",
+                "value": "88:EF:16:DD:28:F5"
+            },
+            {
+                "name": "mtamac",
+                "type": "String",
+                "value": "88:EF:16:DD:28:F6"
+            }
+        ],
+        "inventory": [
+            {
+                "name": "EIS Site ID",
+                "type": "String",
+                "value": "SMILLE255"
+            },
+            {
+                "name": "Inventory Status",
+                "type": "String",
+                "value": "Available"
+            },
+            {
+                "name": "Lifecycle Status",
+                "type": "String",
+                "value": "New"
+            },
+            {
+                "name": "Acquisition Type",
+                "type": "String",
+                "value": "Comcast"
+            }
+        ],
+        "csg": [
+            {
+                "name": "Billing Make",
+                "type": "String",
+                "value": "AR"
+            },
+            {
+                "name": "Billing Model",
+                "type": "String",
+                "value": "TG3482G"
+            },
+            {
+                "name": "Equipment Type",
+                "type": "String",
+                "value": "3V"
+            },
+            {
+                "name": "Billing Location",
+                "type": "String",
+                "value": "2984"
+            },
+            {
+                "name": "Billing Serial",
+                "type": "String",
+                "value": "88EF16DD28F5"
+            },
+            {
+                "name": "Billing Status",
+                "type": "String",
+                "value": "T"
+            }
+        ]
+    }
+}
+
+
+
+Manage-device
+
+
+http://manage-device-xsp-int.g4.app.cloud.comcast.net/api/inventory/V1.0/manage-device/97F2H17FBD37694/device/details
+
+
+response
+{
+    "dataCached": "true",
+    "device": {
+        "keyId": "97F2H17FBD37694",
+        "host": {
+            "serialNumber": "97F2H17FBD37694",
+            "vendorMake": "Arris",
+            "vendorModel": "TG3482G",
+            "provisioningMake": "ARRIS Group, Inc.",
+            "provisioningModel": "TG3482G",
+            "canonicalMake": "AR",
+            "canonicalModel": "TG3482G",
+            "type": "Gateway",
+            "lifeCycleStatus": "New",
+            "siteId": "SMILLE255",
+            "acquisitionType": "Comcast",
+            "inventoryStatus": "Available",
+            "deviceTypeIdentifier": "MTA",
+            "boxIdentifier": "",
+            "deviceCapability": "IMS_HD_VOICE,DOCSIS 3.1",
+            "legacyComponentType": "EMTA",
+            "deviceCapabilityCode": "HD VOICE-I,D3.1",
+            "deviceCapabilityFromGetCiba": "XB6",
+            "videoOnly": "",
+            "xCompatible": "false",
+            "usgDorType": "XB6",
+            "primary": "N",
+            "x1": "false",
+            "hasTru2Way": "false",
+            "inventoryClassification": "XB6",
+            "address1Caption": "CM MAC Address",
+            "address2Caption": "MTA MAC Address",
+            "attributes": {
+                "hostmac": "",
+                "cmmac": "88:EF:16:DD:28:F5",
+                "mtamac": "88:EF:16:DD:28:F6",
+                "wifimac": "",
+                "stbmac": "",
+                "lanmac": "",
+                "wanmac": "",
+                "ethernetmac": "",
+                "unitAddress": "",
+                "esn_meid": "",
+                "csgequipTypeCode": "3V",
+                "tnportCount": "0",
+                "wifiInd": "No",
+                "docsisVersion": "DOCSIS3.0",
+                "devicemac": "",
+                "onumac": ""
+            }
+        }
+    }
+}
+
+
+site-device
+
+http://site-device-xsp-int.g4.app.cloud.comcast.net/api/inventory/V1.0/site-device/mmadet655/device/details
+
+
+<SiteDeviceResponseModel>
+    <responseMessage>
+        <keyId>mmadet655</keyId>
+        <responseStatus>FAILURE</responseStatus>
+        <errors>
+            <errors>
+                <code>2102</code>
+                <description>EIS Integration Service Unavailable. Please try after sometime</description>
+                <details>
+                    <errorMessage></errorMessage>
+                    <transactionId></transactionId>
+                </details>
+            </errors>
+        </errors>
+    </responseMessage>
+</SiteDeviceResponseModel>
